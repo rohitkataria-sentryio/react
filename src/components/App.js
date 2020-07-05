@@ -100,7 +100,7 @@ class App extends Component {
     });
 
     if (WORKFLOW) {
-      this.myCodeIsPerfectForSure();
+      this.myCodeIsPerfect();
     }
 
     /*
