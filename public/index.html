@@ -31,14 +31,14 @@
 
   <script>
     Sentry.init({
-      dsn: 'https://f3e1b754a04b4dc1be1b54454ec6d238@o87286.ingest.sentry.io/1356467',
+      dsn: 'https://f1dae49ab7ce443ab032da30dd5167f0@o87286.ingest.sentry.io/5280521',
       release: "%REACT_APP_RELEASE%",
       environment: "%REACT_APP_ENVIRONMENT%",
       beforeSend(event) {
         // Check if it is an exception, if so, show the report dialog
-        if (event.exception) {
-          Sentry.showReportDialog();
-        }
+//        if (event.exception) {
+//          Sentry.showReportDialog();
+//        }
         return event;
       }
     });
