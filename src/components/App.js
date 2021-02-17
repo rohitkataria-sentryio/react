@@ -74,6 +74,8 @@ class App extends Component {
     // Add context to error/event
     Sentry.configureScope(scope => {
       scope.setUser({ email: this.email }); // attach user/email context
+     //scope.setUser({ip_address: "{{auto}}" ); // attach user/email context
+     //scope.setUser({ip_address : "{{auto}}"});
       scope.setTag("customerType", this.getPlanName()); // custom-tag
     });
 
@@ -100,7 +102,7 @@ class App extends Component {
     });
 
     if (WORKFLOW) {
-       // this.myCodeIsNotPerfect();
+        this.myCodeIsNotPerfect();
     }
 
     /*
